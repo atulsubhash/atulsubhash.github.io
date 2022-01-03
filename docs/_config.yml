@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 #github_username:  jekyll
 permalink: pretty
 # Build settings
-remote_theme: minimal-mistakes-jekyll@4.24.0
+remote_theme: "minimal-mistakes-jekyll@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -54,3 +54,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+author:
+  name: "Atul Subhash"
