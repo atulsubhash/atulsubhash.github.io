@@ -1,0 +1,121 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+# **but __NOT__ in front matter!!**
+
+remote_theme: "mmistakes/minimal-mistakes@4.14.1"
+title: Domain of Tech
+url: http://domainoftech.com
+name: Domain Of Tech(DOT)
+##  > # this means to ignore newlines until "baseurl:"
+description: All about tech
+baseurl: "/"
+show_downloads: false
+
+twitter_username:
+github_username: ninja-tech
+linkedin_username: atulsubhash
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# unused-theme: jekyll-theme-time-machine ## bug in post title uses site title
+# pretty plain! theme: jekyll-theme-slate
+# Too Minimal!! theme: jekyll-theme-minimal
+# unused-theme: jekyll-theme-minimal
+# unused-theme: jekyll-theme-primer
+# unused-theme: minima
+# unused-theme: jekyll-theme-tactile
+# unused-theme: jekyll-theme-cayman
+# unused-theme: jekyll-theme-modernist
+# unused-theme: jekyll-theme-leap-day
+# unused-remote_theme: daattali/beautiful-jekyll # Unsupported as a remote_theme
+
+#
+# minimal-mistakes customizations
+#
+minimal_mistakes_skin: "dark"
+title_separator: "|"
+breadcrumbs: true
+paginate: 10
+paginate_path: /page:num/
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      related: true
+author:
+   name: "Atul Subhash"
+   avatar: "https://secure.gravatar.com/avatar/8b8f087900cec05cf97fe49c50acdc5e"
+   bio: "Atul Subhash Bio"
+   links:
+     - label: "GitHub"
+       icon:  "fab fa-fw fa-github"
+       url:   "https://github.com/ninja-tech"
+     - label: "My Resume"
+       icon:  "fas fa-file-pdf"
+       url:   "https://drive.google.com/file/d/1wP571bHe9XaQvNXdxUvyJcTIvDnQu1BC/view?usp=sharing"
+     - label: "LinkedIn"
+       icon:  "fab fa-linkedin"
+       url:   "https://www.linkedin.com/in/atulsubhash"
+#twitter:
+#   username: &twitter <>
+linkedin:
+   username: atulsubhash
+analytics:
+   provider: 'google-gtag'
+   google:
+     #tracking_id: 'UA-50378804-1'
+     tracking_id: 'GTM-NZ7VMBS'
+     anonymize_ip: false
+#
+# END minimal-mistakes customizations
+#
+
+repository: atulsubhash/atulsubhash.github.io
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
+
+whitelist: 
+  - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
+  
+include:
+  - _pages
+# exclude:
+  # - Gemfile
+  # - Gemfile.lock
+        
+# minimal-mistakes customizations
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# END minimal-mistakes customizations
+
+# Should this be :year-:title? /:year/:month/:title? /:year/:title? /:title?
+permalink: /:categories/:year-:title/
